@@ -1,4 +1,4 @@
-# Aliance-Production
+# Aliance Production
 Figma link https://www.figma.com/file/HSAH0sO9mmPlAzVISIQxoq/Aliance-Production
 
 ## Описание: 
