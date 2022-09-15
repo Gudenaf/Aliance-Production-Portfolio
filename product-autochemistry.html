@@ -5,7 +5,7 @@
 	<title>Автомобильная химия</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220901200959">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220916011010">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -343,6 +343,62 @@
 					</div>
 				</div>
 			</section>
+			<section class="work">
+				<div class="work__container">
+					<div class="work__content">
+						<h2 class="work__title title">схема работы</h2>
+						<!-- Swiper Slider -->
+						<div class="step swiper">
+							<div class="step__wrapper swiper-wrapper">
+								<!-- Slide-->
+								<div class="step__slide swiper-slide">
+									<div class="step__item">
+										<span class="step__number">01</span>
+										<h3 class="step__title-small small-title">Знакомство</h3>
+										<p class="step__subtitle">Безусловно, сплочённость команды профессионалов позволяет
+											оценить значение форм воздействия.</p>
+										<a class="step__line-link line-link" href="#" data-popup="#phone__popup">Оставить
+											заявку</a>
+									</div>
+								</div>
+								<div class="step__slide swiper-slide">
+									<div class="step__item">
+										<span class="step__number">02</span>
+										<h3 class="step__title-small small-title">Заключение договора</h3>
+										<p class="step__subtitle">Лишь интерактивные прототипы призваны к ответу.</p>
+									</div>
+								</div>
+								<div class="step__slide swiper-slide">
+									<div class="step__item">
+										<span class="step__number">03</span>
+										<h3 class="step__title-small small-title">Производство</h3>
+										<p class="step__subtitle">А также стремящиеся вытеснить традиционное производство,
+											нанотехнологии функционально разнесены на независимые элементы.</p>
+									</div>
+								</div>
+								<div class="step__slide swiper-slide">
+									<div class="step__item">
+										<span class="step__number">04</span>
+										<h3 class="step__title-small small-title">Доставка</h3>
+										<p class="step__subtitle">В частности, экономическая повестка сегодняшнего дня
+											говорит о
+											возможностях приоритизации разума над эмоциями.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Nav (left/right) -->
+							<div class="step__btn-wrapper swiper-button-wrapper">
+								<button type="button" class="step-btn-prev swiper-button-prev">
+									<img src="img/icons/arrow-prev-small.svg" alt="Previous slide">
+								</button>
+								<button type="button" class="step-btn-next swiper-button-next">
+									<img src="img/icons/arrow-next-small.svg" alt="Next slide">
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="partner">
 				<div class="partner__container">
 					<div class="partner__content">
@@ -406,7 +462,7 @@
 						<div class="offer__input-group input-group">
 							<input class="offer__text input__text" type="text" placeholder="Имя">
 							<div class="offer__tel-wrapper">
-								<input class="offer__tel input__tel" type="tel" value="+_ (___) __-__-___">
+								<input class="offer__tel input__tel" type="tel" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
 								<span class="input__tel-desc info">Номер телефона</span>
 							</div>
 						</div>
@@ -492,7 +548,7 @@
 				<div class="input-group input">
 					<input class="phone__text input__text" type="text" placeholder="Имя">
 					<div class="input__tel-wrapper">
-						<input class="input__tel popup__tel" type="tel" value="+7 (95_) __-__-___">
+						<input class="popup__tel input__tel" type="tel" name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
 						<span class="input__tel-desc info">Номер телефона</span>
 					</div>
 				</div>
@@ -516,7 +572,7 @@
 			</div>
 		</div>
 	</form>
-	<script src="js/app.min.js?_v=20220901200959"></script>
+	<script src="js/app.min.js?_v=20220916011010"></script>
 
 </body>
 
