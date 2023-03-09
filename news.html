@@ -5,12 +5,17 @@
 	<title>Блог</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220916011010">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309045235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader__wrapper">
+			<div class="loader-circle">loading</div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header data-scroll="100" data-scroll-show="500" class="header">
 			<div class="header-container">
@@ -51,7 +56,7 @@
 						</nav>
 						<hr class="menu__line line">
 						<div class="menu__contact contact">
-							<p class="menu__contact__tel contact__tel">+7 (499) 686-10-14</p>
+							<a href="tel:+74996861014" class="menu__contact__tel contact__tel">+7 (499) 686-10-14</a>
 							<p class="menu__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
 							<p class="menu__contact__email contact__email">a.dragunov@tdaliance.ru</p>
 							<div class="contact__social">
@@ -62,28 +67,29 @@
 					</div>
 				</div>
 				<div class="header__info info">
-					<p class="header__tel info__tel">+7 (499) 686-10-14</p>
-					<a class="header__consult consult link" href="#" data-popup="#phone__popup">
-						<span class="header__consult__text">Получить консультацию</span></a>
+					<a href="tel:+74996861014" class="header__tel info__tel">+7 (499) 686-10-14</a>
+					<button class="header__consult consult link" data-popup="#phone__popup">
+						<span class="header__consult__text">Получить консультацию</span></button>
 				</div>
 			</div>
 		</header>
 		<main class="news__page page">
 			<section class="news">
 				<div class="news__heading-container">
-					<div class="news__content">
-						<h1 class="news__title main__title">Блог</h1>
-						<ul class="breadcrumb">
+					<div data-watch data-watch-once data-watch-margin="-5% 0px" class="news__content">
+						<h1 class="news__title main__title _anim _anim-left-to-right">Блог</h1>
+						<ul class="breadcrumb _anim _anim-top-to-bottom">
 							<li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
 							<li class="breadcrumb__item"><a class="breadcrumb__link" href="news.html">Блог</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
 			<div class="news-blog__container">
 				<div class="news-blog__items">
 					<a href="blog-more-lab.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Современная методология разработки
 								одухотворила всех
@@ -93,7 +99,7 @@
 						</div>
 					</a>
 					<a href="blog-more-manufacture.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 								прекрасна</h3>
@@ -103,7 +109,7 @@
 						</div>
 					</a>
 					<a href="blog-more-manufacture.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 								прекрасна</h3>
@@ -113,7 +119,7 @@
 						</div>
 					</a>
 					<a href="blog-more-lab.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Современная методология разработки
 								одухотворила всех
@@ -123,7 +129,7 @@
 						</div>
 					</a>
 					<a href="blog-more-lab.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Современная методология разработки
 								одухотворила всех
@@ -133,7 +139,7 @@
 						</div>
 					</a>
 					<a href="blog-more-manufacture.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 								прекрасна</h3>
@@ -143,7 +149,7 @@
 						</div>
 					</a>
 					<a href="blog-more-manufacture.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 								прекрасна</h3>
@@ -153,7 +159,7 @@
 						</div>
 					</a>
 					<a href="blog-more-lab.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Современная методология разработки
 								одухотворила всех
@@ -163,7 +169,7 @@
 						</div>
 					</a>
 					<a href="blog-more-lab.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Современная методология разработки
 								одухотворила всех
@@ -173,7 +179,7 @@
 						</div>
 					</a>
 					<a href="blog-more-manufacture.html" class="news-blog__item blog__slide">
-						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+						<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 						<div class="blog__desc">
 							<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 								прекрасна</h3>
@@ -183,6 +189,7 @@
 						</div>
 					</a>
 				</div>
+
 				<ul class="news-blog__pagination pagination">
 					<li class="pagination__active">1</li>
 					<li class="pagination__number"><a href="news-page-2.html">2</a></li>
@@ -191,48 +198,52 @@
 					<li class="pagination__number"><a href="error.html">5</a></li>
 				</ul>
 			</div>
-			<section class="offer">
-				<picture><source srcset="img/offer/item.webp" type="image/webp"><img class="offer__aside-bg" src="img/offer/item.jpg" alt=""></picture>
+			<section data-watch data-watch-once data-watch-threshold="0.5" class="offer">
+				<img class="offer__aside-bg _anim _anim-left-to-right" src="img/offer/item.webp" alt="">
+
 				<div class="offer__container">
-					<div class="offer__content">
-						<h2 class="offer__title title">Хотите сотрудничать?</h2>
-						<p class="offer__subtitle">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
+					<div data-watch data-watch-once class="offer__content">
+						<h2 class="offer__title title _anim _anim-left-to-right">Хотите сотрудничать?</h2>
+						<p class="offer__subtitle _anim _anim-top-to-bottom">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
 							ответит
 							на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-						<div class="offer__input-group input-group">
-							<input class="offer__text input__text" type="text" placeholder="Имя">
-							<div class="offer__tel-wrapper">
-								<input class="offer__tel input__tel" type="tel" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
-								<span class="input__tel-desc info">Номер телефона</span>
+						<form class="offer__form _anim _anim-top-to-bottom">
+							<div class="offer__input-group input-group">
+								<input class="offer__text input__text" data-required type="text" placeholder="Имя">
+								<div class="offer__tel-wrapper">
+									<input class="offer__tel input__tel" data-required type="tel" id="telOffer" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
+									<label for="telOffer" class="input__tel-desc info">Номер телефона</label>
+								</div>
 							</div>
-						</div>
-						<div class="offer__submit">
-							<a href="#" class="offer__link link" data-popup="#thx__popup">Отправить заявку</a>
-							<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную
-								работу, но
-								и
-								абсолютную конфиденциальность информации!</p>
-						</div>
+							<div class="offer__submit">
+								<button type="submit" data-popup="#thx__popup" class="offer__link link">Отправить заявку</button>
+								<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
+
 			<hr class="footer__line line">
-			<div class="footer-top top __container">
-				<a href="index.html" class="top__logo logo"><img src="img/logo.svg" alt=""></a>
-				<p class="top__contact__tel contact__tel">+7 (499) 686-10-14</p>
-				<p class="top__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
-				<p class="top__contact__email contact__email">a.dragunov@tdaliance.ru</p>
-				<div class="top__social contact__social">
+
+			<div data-watch data-watch-once data-watch-threshold="0.5" class="footer-top top __container">
+				<a href="index.html" class="top__logo logo _anim _anim-top-to-bottom"><img src="img/logo.svg" alt=""></a>
+				<a href="tel:+74996861014" class="top__contact__tel contact__tel _anim _anim-top-to-bottom">+7 (499) 686-10-14</a>
+				<p class="top__contact__address contact__address _anim _anim-top-to-bottom">г. Москва, Холодильный пер. 4к1с8</p>
+				<p class="top__contact__email contact__email _anim _anim-top-to-bottom">a.dragunov@tdaliance.ru</p>
+				<div class="top__social contact__social _anim _anim-top-to-bottom">
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/vk.svg" alt="VK"></a>
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/inst.svg" alt="Instagram"></a>
 				</div>
 			</div>
+
 			<hr class="footer__line line">
+
 			<div class="footer-middle  middle __container">
-				<nav class="middle__menu">
-					<ul class="middle__list-contract">
+				<nav data-watch data-watch-once data-watch-margin="-10% 0px" class="middle__menu">
+					<ul class="middle__list-contract _anim _anim-top-to-bottom">
 						<li class="middle__item-contract">
 							<a href="contract-product.html" class="middle__link">Контрактное производство</a>
 							<ul class="middle__sublist sublist-contract">
@@ -247,7 +258,7 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-marks">
+					<ul class="middle__list-marks _anim _anim-top-to-bottom">
 						<li class="middle__item-marks">
 							<a href="own-product.html" class="middle__link">Собственные марки</a>
 							<ul class="middle__sublist">
@@ -256,51 +267,52 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-group">
+					<ul class="middle__list-group _anim _anim-top-to-bottom">
 						<li class="middle__item"><a href="about.html" class="middle__link">О компании</a></li>
 						<li class="middle__item"><a href="news.html" class="middle__link">Новости</a></li>
 						<li class="middle__item"><a href="contact.html" class="middle__link">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
+
 			<hr class="footer__line line">
-			<div class="footer-bottom bottom __container">
-				<div class="bottom-group">
+
+			<div data-watch data-watch-once class="footer-bottom bottom __container">
+				<div class="bottom-group _anim _anim-top-to-bottom">
 					<p class="bottom-copyright">© 2022 «Aliance Production». Все права защищены.</p>
 					<a href="politics.html" class="bottom-policy">Политика конфиденциальности</a>
 				</div>
-				<div class="bottom-made">
+				<div class="bottom-made _anim _anim-top-to-bottom">
 					<p class="bottom__text bottom__text-mob">Дизайн и разработка:</p>
 					<p class="bottom__text bottom__text-desc">Сделано в</p>
 					<a href="error.html" class="bottom__link"><img src="img/footer/ruso.svg" alt="Made in Ruso"></a>
 				</div>
 			</div>
+
 		</footer>
 	</div>
-	<form id="phone__popup" aria-hidden="true" class="phone__popup popup">
+	<div id="phone__popup" aria-hidden="true" class="phone__popup popup">
 		<div class="phone__wrapper popup__wrapper">
-			<div class="phone-content popup__content">
+			<form class="phone-content popup__content">
 				<button data-close type="button" class="phone__close popup__close"></button>
 				<p class="phone__heading popup__heading">Есть вопросы?</p>
 				<p class="phone__subheading popup__subheading">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее
 					время ответит на
 					все интересующие вопросы и поможем даже в самых сложных случаях!</p>
 				<div class="input-group input">
-					<input class="phone__text input__text" type="text" placeholder="Имя">
+					<input class="phone__text input__text" type="text" data-required placeholder="Имя">
 					<div class="input__tel-wrapper">
-						<input class="popup__tel input__tel" type="tel" name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
+						<input class="popup__tel input__tel" type="tel" data-required name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
 						<span class="input__tel-desc info">Номер телефона</span>
 					</div>
 				</div>
-				<a href="#" class="phone__link popup__link link" data-popup="#thx__popup">Отправить заявку</a>
-				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но
-					и
-					абсолютную конфиденциальность информации!</p>
-			</div>
+				<button type="submit" data-popup="#thx__popup" class="phone__link popup__link link">Отправить заявку</button>
+				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+			</form>
 		</div>
-	</form>
+	</div>
 
-	<form id="thx__popup" aria-hidden="true" class="thx__popup popup">
+	<div id="thx__popup" aria-hidden="true" class="thx__popup popup">
 		<div class="thx__wrapper popup__wrapper">
 			<div class="thx-content popup__content">
 				<button data-close type="button" class="thx__close popup__close"></button>
@@ -311,8 +323,8 @@
 				<a href="#" class="thx__link popup__link link">Вернуться на главную</a>
 			</div>
 		</div>
-	</form>
-	<script src="js/app.min.js?_v=20220916011010"></script>
+	</div>
+	<script src="js/app.min.js?_v=20230309045235"></script>
 
 </body>
 

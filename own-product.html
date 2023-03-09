@@ -5,12 +5,17 @@
 	<title>Собственные торговые марки</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220916011010">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309045235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader__wrapper">
+			<div class="loader-circle">loading</div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<header data-scroll="100" data-scroll-show="500" class="header">
 			<div class="header-container">
@@ -51,7 +56,7 @@
 						</nav>
 						<hr class="menu__line line">
 						<div class="menu__contact contact">
-							<p class="menu__contact__tel contact__tel">+7 (499) 686-10-14</p>
+							<a href="tel:+74996861014" class="menu__contact__tel contact__tel">+7 (499) 686-10-14</a>
 							<p class="menu__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
 							<p class="menu__contact__email contact__email">a.dragunov@tdaliance.ru</p>
 							<div class="contact__social">
@@ -62,18 +67,18 @@
 					</div>
 				</div>
 				<div class="header__info info">
-					<p class="header__tel info__tel">+7 (499) 686-10-14</p>
-					<a class="header__consult consult link" href="#" data-popup="#phone__popup">
-						<span class="header__consult__text">Получить консультацию</span></a>
+					<a href="tel:+74996861014" class="header__tel info__tel">+7 (499) 686-10-14</a>
+					<button class="header__consult consult link" data-popup="#phone__popup">
+						<span class="header__consult__text">Получить консультацию</span></button>
 				</div>
 			</div>
 		</header>
 		<main class="own-product__page page">
 			<section class="own-product">
 				<div class="own-product__heading-container">
-					<div class="own-product__content">
-						<h1 class="own-product__title main__title">Собственные торговые марки</h1>
-						<ul class="breadcrumb">
+					<div data-watch data-watch-once data-watch-margin="-5% 0px" class="own-product__content">
+						<h1 class="own-product__title main__title _anim _anim-left-to-right">Собственные торговые марки</h1>
+						<ul class="breadcrumb _anim _anim-top-to-bottom">
 							<li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
 							<li class="breadcrumb__item"><a class="breadcrumb__link" href="own-product.html">Собственные торговые марки</a></li>
 						</ul>
@@ -81,9 +86,9 @@
 				</div>
 			</section>
 			<section class="mark">
-				<div class="mark__container">
+				<div data-watch data-watch-once data-watch-threshold="0.4" class="mark__container">
 					<div class="mark__items animation">
-						<a href="product-ag-tech.html" class="mark__ag mark__item animation-item">
+						<a href="product-ag-tech.html" class="mark__ag mark__item animation-item _anim _anim-top-to-bottom">
 							<div class="mark__ag-wrapper mark__icon-wrapper">
 								<svg class="mark__icon-change" width="140" height="121" viewBox="0 0 140 121" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M98.0283 26.4162H84.4525L81.002 20.8727L74.3273 10.5212L58.4889 35.1273L51.1919 46.5535L45.2525 55.8303L37.9556 67.2L31.9596 76.4768L24.6626 87.903H11.1434L18.4404 76.4768L24.3798 67.2L31.6768 55.8303L37.6162 46.5535L67.5394 0H81.1152L87.7333 10.3515L94.5212 20.8727L98.0283 26.4162Z" fill="#828A99" />
@@ -100,7 +105,7 @@
 							<p class="mark__subtitle">Для современного мира разбавленное изрядной долей эмпатии,
 								рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
 						</a>
-						<a href="product-autochemistry.html" class="mark__ap mark__item animation-item">
+						<a href="product-autochemistry.html" class="mark__ap mark__item animation-item _anim _anim-top-to-bottom">
 							<div class="mark__ap-wrapper mark__icon-wrapper">
 								<svg class="mark__icon-change" width="103" height="140" viewBox="0 0 103 140" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.1146 121.929C16.1146 122.074 16.0664 122.18 15.9796 122.257C15.8929 122.343 15.7772 122.382 15.6327 122.382H12.828C12.7027 122.382 12.5967 122.334 12.51 122.247C12.4232 122.16 12.3558 122.054 12.3269 121.929L11.1028 116.898H5.0117L3.78769 121.929C3.75878 122.054 3.69131 122.16 3.60457 122.247C3.51783 122.334 3.41181 122.382 3.28652 122.382H0.481894C0.337326 122.382 0.221671 122.343 0.13493 122.257C0.0481889 122.18 0 122.074 0 121.929C0 121.91 0.00963995 121.89 0.00963995 121.881C0.0192778 121.861 0.0289125 121.833 0.0289125 121.794L4.3756 105.178C4.52981 104.561 4.76112 104.08 5.05989 103.723C5.35867 103.376 5.68636 103.106 6.03332 102.913C6.37065 102.73 6.72725 102.615 7.09349 102.557C7.45009 102.509 7.77778 102.48 8.05728 102.48C8.33678 102.48 8.66446 102.509 9.02107 102.557C9.38731 102.615 9.74391 102.73 10.0812 102.913C10.4282 103.106 10.7462 103.376 11.0547 103.723C11.3534 104.08 11.5847 104.561 11.7389 105.178L16.0856 121.794C16.0856 121.833 16.0953 121.861 16.0953 121.881C16.1049 121.89 16.1146 121.91 16.1146 121.929ZM8.48134 106.007C8.44279 105.843 8.40424 105.737 8.34641 105.67C8.29822 105.612 8.20185 105.583 8.05728 105.583C7.91271 105.583 7.81633 105.612 7.76814 105.67C7.71031 105.737 7.67176 105.843 7.63321 106.007L5.72491 113.872H10.3896L8.48134 106.007Z" fill="#828A99" />
@@ -131,48 +136,52 @@
 					</div>
 				</div>
 			</section>
-			<section class="offer">
-				<picture><source srcset="img/offer/item.webp" type="image/webp"><img class="offer__aside-bg" src="img/offer/item.jpg" alt=""></picture>
+			<section data-watch data-watch-once data-watch-threshold="0.5" class="offer">
+				<img class="offer__aside-bg _anim _anim-left-to-right" src="img/offer/item.webp" alt="">
+
 				<div class="offer__container">
-					<div class="offer__content">
-						<h2 class="offer__title title">Хотите сотрудничать?</h2>
-						<p class="offer__subtitle">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
+					<div data-watch data-watch-once class="offer__content">
+						<h2 class="offer__title title _anim _anim-left-to-right">Хотите сотрудничать?</h2>
+						<p class="offer__subtitle _anim _anim-top-to-bottom">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
 							ответит
 							на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-						<div class="offer__input-group input-group">
-							<input class="offer__text input__text" type="text" placeholder="Имя">
-							<div class="offer__tel-wrapper">
-								<input class="offer__tel input__tel" type="tel" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
-								<span class="input__tel-desc info">Номер телефона</span>
+						<form class="offer__form _anim _anim-top-to-bottom">
+							<div class="offer__input-group input-group">
+								<input class="offer__text input__text" data-required type="text" placeholder="Имя">
+								<div class="offer__tel-wrapper">
+									<input class="offer__tel input__tel" data-required type="tel" id="telOffer" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
+									<label for="telOffer" class="input__tel-desc info">Номер телефона</label>
+								</div>
 							</div>
-						</div>
-						<div class="offer__submit">
-							<a href="#" class="offer__link link" data-popup="#thx__popup">Отправить заявку</a>
-							<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную
-								работу, но
-								и
-								абсолютную конфиденциальность информации!</p>
-						</div>
+							<div class="offer__submit">
+								<button type="submit" data-popup="#thx__popup" class="offer__link link">Отправить заявку</button>
+								<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
+
 			<hr class="footer__line line">
-			<div class="footer-top top __container">
-				<a href="index.html" class="top__logo logo"><img src="img/logo.svg" alt=""></a>
-				<p class="top__contact__tel contact__tel">+7 (499) 686-10-14</p>
-				<p class="top__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
-				<p class="top__contact__email contact__email">a.dragunov@tdaliance.ru</p>
-				<div class="top__social contact__social">
+
+			<div data-watch data-watch-once data-watch-threshold="0.5" class="footer-top top __container">
+				<a href="index.html" class="top__logo logo _anim _anim-top-to-bottom"><img src="img/logo.svg" alt=""></a>
+				<a href="tel:+74996861014" class="top__contact__tel contact__tel _anim _anim-top-to-bottom">+7 (499) 686-10-14</a>
+				<p class="top__contact__address contact__address _anim _anim-top-to-bottom">г. Москва, Холодильный пер. 4к1с8</p>
+				<p class="top__contact__email contact__email _anim _anim-top-to-bottom">a.dragunov@tdaliance.ru</p>
+				<div class="top__social contact__social _anim _anim-top-to-bottom">
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/vk.svg" alt="VK"></a>
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/inst.svg" alt="Instagram"></a>
 				</div>
 			</div>
+
 			<hr class="footer__line line">
+
 			<div class="footer-middle  middle __container">
-				<nav class="middle__menu">
-					<ul class="middle__list-contract">
+				<nav data-watch data-watch-once data-watch-margin="-10% 0px" class="middle__menu">
+					<ul class="middle__list-contract _anim _anim-top-to-bottom">
 						<li class="middle__item-contract">
 							<a href="contract-product.html" class="middle__link">Контрактное производство</a>
 							<ul class="middle__sublist sublist-contract">
@@ -187,7 +196,7 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-marks">
+					<ul class="middle__list-marks _anim _anim-top-to-bottom">
 						<li class="middle__item-marks">
 							<a href="own-product.html" class="middle__link">Собственные марки</a>
 							<ul class="middle__sublist">
@@ -196,51 +205,52 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-group">
+					<ul class="middle__list-group _anim _anim-top-to-bottom">
 						<li class="middle__item"><a href="about.html" class="middle__link">О компании</a></li>
 						<li class="middle__item"><a href="news.html" class="middle__link">Новости</a></li>
 						<li class="middle__item"><a href="contact.html" class="middle__link">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
+
 			<hr class="footer__line line">
-			<div class="footer-bottom bottom __container">
-				<div class="bottom-group">
+
+			<div data-watch data-watch-once class="footer-bottom bottom __container">
+				<div class="bottom-group _anim _anim-top-to-bottom">
 					<p class="bottom-copyright">© 2022 «Aliance Production». Все права защищены.</p>
 					<a href="politics.html" class="bottom-policy">Политика конфиденциальности</a>
 				</div>
-				<div class="bottom-made">
+				<div class="bottom-made _anim _anim-top-to-bottom">
 					<p class="bottom__text bottom__text-mob">Дизайн и разработка:</p>
 					<p class="bottom__text bottom__text-desc">Сделано в</p>
 					<a href="error.html" class="bottom__link"><img src="img/footer/ruso.svg" alt="Made in Ruso"></a>
 				</div>
 			</div>
+
 		</footer>
 	</div>
-	<form id="phone__popup" aria-hidden="true" class="phone__popup popup">
+	<div id="phone__popup" aria-hidden="true" class="phone__popup popup">
 		<div class="phone__wrapper popup__wrapper">
-			<div class="phone-content popup__content">
+			<form class="phone-content popup__content">
 				<button data-close type="button" class="phone__close popup__close"></button>
 				<p class="phone__heading popup__heading">Есть вопросы?</p>
 				<p class="phone__subheading popup__subheading">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее
 					время ответит на
 					все интересующие вопросы и поможем даже в самых сложных случаях!</p>
 				<div class="input-group input">
-					<input class="phone__text input__text" type="text" placeholder="Имя">
+					<input class="phone__text input__text" type="text" data-required placeholder="Имя">
 					<div class="input__tel-wrapper">
-						<input class="popup__tel input__tel" type="tel" name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
+						<input class="popup__tel input__tel" type="tel" data-required name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
 						<span class="input__tel-desc info">Номер телефона</span>
 					</div>
 				</div>
-				<a href="#" class="phone__link popup__link link" data-popup="#thx__popup">Отправить заявку</a>
-				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но
-					и
-					абсолютную конфиденциальность информации!</p>
-			</div>
+				<button type="submit" data-popup="#thx__popup" class="phone__link popup__link link">Отправить заявку</button>
+				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+			</form>
 		</div>
-	</form>
+	</div>
 
-	<form id="thx__popup" aria-hidden="true" class="thx__popup popup">
+	<div id="thx__popup" aria-hidden="true" class="thx__popup popup">
 		<div class="thx__wrapper popup__wrapper">
 			<div class="thx-content popup__content">
 				<button data-close type="button" class="thx__close popup__close"></button>
@@ -251,8 +261,8 @@
 				<a href="#" class="thx__link popup__link link">Вернуться на главную</a>
 			</div>
 		</div>
-	</form>
-	<script src="js/app.min.js?_v=20220916011010"></script>
+	</div>
+	<script src="js/app.min.js?_v=20230309045235"></script>
 
 </body>
 

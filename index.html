@@ -5,13 +5,21 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220916011010">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309045235">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
+	<div class="loader">
+		<div class="loader__wrapper">
+			<div class="loader-circle">loading</div>
+		</div>
+	</div>
+
 	<div class="wrapper">
+
 		<header data-scroll="100" data-scroll-show="500" class="header">
 			<div class="header-container header__home">
 				<div class="menu__icon __wrapper icon-menu__wrapper">
@@ -70,7 +78,7 @@
 						</nav>
 						<hr class="menu__line line">
 						<div class="menu__contact contact">
-							<p class="menu__contact__tel contact__tel">+7 (499) 686-10-14</p>
+							<a href="tel:+74996861014" class="menu__contact__tel contact__tel">+7 (499) 686-10-14</a>
 							<p class="menu__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
 							<p class="menu__contact__email contact__email">a.dragunov@tdaliance.ru</p>
 							<div class="contact__social">
@@ -81,91 +89,96 @@
 					</div>
 				</div>
 				<div class="header__info info">
-					<p class="header__tel info__tel">+7 (499) 686-10-14</p>
+					<a href="tel:+74996861014" class="header__tel info__tel">+7 (499) 686-10-14</a>
 					<a class="header__consult consult link" href="#" data-popup="#phone__popup">
 						<span class="header__consult__text">Получить консультацию</span></a>
 				</div>
 			</div>
 		</header>
+
 		<main class="home__page page">
+
 			<section class="home">
 				<div class="home__container">
-					<div class="home__content">
-						<h1 class="home__title main__title">Комплексное обеспечение товарами <br class="home__title-br">и
+					<div data-watch data-watch-once data-watch-threshold="0.8" class="home__content">
+						<h1 class="home__title main__title _anim _anim-left-to-right">Комплексное обеспечение товарами <br class="home__title-br">и
 							расходными
 							материалами бизнеса</h1>
-						<p class="home__subtitle">Высокий уровень вовлечения представителей целевой аудитории является
+						<p class="home__subtitle _anim _anim-left-to-right">Высокий уровень вовлечения представителей целевой аудитории является
 							четким доказательством простого факта: высококачественный прототип будущего проекта напрямую
 							зависит от анализа существующих паттернов поведения.</p>
-						<a href="about.html" class="home__link link">Подробнее о компании</a>
-						<!-- Swiper Slider -->
-						<div class="quality swiper">
-							<div class="quality__wrapper swiper-wrapper">
-								<!-- Slide-->
-								<div class="quality__slide swiper-slide">
-									<div class="quality__item">
-										<div class="quality__icon">
-											<img src="img/icons/quality/hourglass.svg" alt="Hourglass">
-										</div>
-										<p class="quality__text">Непрерывная работа c 2017 года</p>
+						<div class="home__link_wrapper _anim _anim-top-to-bottom">
+							<a href="about.html" class="home__link link">Подробнее о компании</a>
+						</div>
+					</div>
+					<!-- Swiper Slider -->
+					<div class="quality swiper">
+						<div class="quality__wrapper swiper-wrapper">
+							<!-- Slide-->
+							<div class="quality__slide swiper-slide">
+								<div class="quality__item">
+									<div class="quality__icon">
+										<img src="img/icons/quality/hourglass.svg" alt="Hourglass">
 									</div>
-								</div>
-								<div class="quality__slide swiper-slide">
-									<div class="quality__item">
-										<div class="quality__icon">
-											<img src="img/icons/quality/certified.svg" alt="Certified">
-										</div>
-										<p class="quality__text">Вся продукция сертифицирована</p>
-									</div>
-								</div>
-								<div class="quality__slide swiper-slide">
-									<div class="quality__item">
-										<div class="quality__icon">
-											<img src="img/icons/quality/man.svg" alt="Man">
-										</div>
-										<p class="quality__text">Контроль качества на всех этапах</p>
-									</div>
-								</div>
-								<div class="quality__slide swiper-slide">
-									<div class="quality__item">
-										<div class="quality__icon">
-											<img src="img/icons/quality/truck.svg" alt="Truck">
-										</div>
-										<p class="quality__text">Возможны поставки по всей России</p>
-									</div>
-								</div>
-								<div class="quality__slide swiper-slide">
-									<div class="quality__item">
-										<div class="quality__icon">
-											<img src="img/icons/quality/speed.svg" alt="Speed">
-										</div>
-										<p class="quality__text">Оперативное производство</p>
-									</div>
+									<p class="quality__text">Непрерывная работа c 2017 года</p>
 								</div>
 							</div>
-							<!-- Nav (left/right) -->
-							<div class="quality__btn-wrapper swiper-button-wrapper">
-								<button type="button" class="quality-btn-prev swiper-button-prev">
-									<svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.16158 0.686292L8.86869 1.3934L2.41405 7.84803L31 7.84795L30.9997 8.84819L2.42381 8.84801L8.86869 15.2929L8.16158 16L1.00959 8.84801H0.999926V8.83835L0.504726 8.34315L8.16158 0.686292Z" fill="#fff" />
-									</svg>
-								</button>
-								<button type="button" class="quality-btn-next swiper-button-next">
-									<svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.8384 0.686292L22.1313 1.3934L28.5859 7.84803L0 7.84795L0.000345267 8.84819L28.5762 8.84801L22.1313 15.2929L22.8384 16L29.9904 8.84801H30.0001V8.83835L30.4953 8.34315L22.8384 0.686292Z" fill="#fff" />
-									</svg>
-								</button>
+							<div class="quality__slide swiper-slide">
+								<div class="quality__item">
+									<div class="quality__icon">
+										<img src="img/icons/quality/certified.svg" alt="Certified">
+									</div>
+									<p class="quality__text">Вся продукция сертифицирована</p>
+								</div>
 							</div>
+							<div class="quality__slide swiper-slide">
+								<div class="quality__item">
+									<div class="quality__icon">
+										<img src="img/icons/quality/man.svg" alt="Man">
+									</div>
+									<p class="quality__text">Контроль качества на всех этапах</p>
+								</div>
+							</div>
+							<div class="quality__slide swiper-slide">
+								<div class="quality__item">
+									<div class="quality__icon">
+										<img src="img/icons/quality/truck.svg" alt="Truck">
+									</div>
+									<p class="quality__text">Возможны поставки по всей России</p>
+								</div>
+							</div>
+							<div class="quality__slide swiper-slide">
+								<div class="quality__item">
+									<div class="quality__icon">
+										<img src="img/icons/quality/speed.svg" alt="Speed">
+									</div>
+									<p class="quality__text">Оперативное производство</p>
+								</div>
+							</div>
+						</div>
+						<!-- Nav (left/right) -->
+						<div class="quality__btn-wrapper swiper-button-wrapper">
+							<button type="button" class="quality-btn-prev swiper-button-prev">
+								<svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.16158 0.686292L8.86869 1.3934L2.41405 7.84803L31 7.84795L30.9997 8.84819L2.42381 8.84801L8.86869 15.2929L8.16158 16L1.00959 8.84801H0.999926V8.83835L0.504726 8.34315L8.16158 0.686292Z" fill="#fff" />
+								</svg>
+							</button>
+							<button type="button" class="quality-btn-next swiper-button-next">
+								<svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.8384 0.686292L22.1313 1.3934L28.5859 7.84803L0 7.84795L0.000345267 8.84819L28.5762 8.84801L22.1313 15.2929L22.8384 16L29.9904 8.84801H30.0001V8.83835L30.4953 8.34315L22.8384 0.686292Z" fill="#fff" />
+								</svg>
+							</button>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="work">
 				<div class="work__container">
-					<div class="work__content">
-						<h2 class="work__title title">схема работы</h2>
+					<div data-watch data-watch-once data-watch-threshold="1" class="work__content">
+						<h2 class="work__title title _anim _anim-left-to-right">схема работы</h2>
 						<!-- Swiper Slider -->
-						<div class="step swiper">
+						<div class="step swiper _anim _anim-top-to-bottom">
 							<div class="step__wrapper swiper-wrapper">
 								<!-- Slide-->
 								<div class="step__slide swiper-slide">
@@ -216,83 +229,86 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="contract">
 				<div class="contract__container">
-					<div class="contract__content">
-						<h2 class="contact__title title">Контрактное производство</h2>
+					<div data-watch data-watch-once data-watch-margin="-15% 0px" class="contract__content">
+						<h2 class="contact__title title _anim _anim-left-to-right">Контрактное производство</h2>
+
 						<div class="contract__items animation">
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Автомобильная химия</h3>
 									<p class="contract__subtitle">Безусловно, сплочённость команды профессионалов позволяет
 										оценить значение форм воздействия.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/avto-him.webp" type="image/webp"><img src="img/contract/avto-him.jpg" alt="Автомобильная химия"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/avto-him.webp" type="image/webp"><img src="img/contract/avto-him.webp" alt="Автомобильная химия"></picture>
 								</div>
 							</a>
 
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Бытовая химия</h3>
 									<p class="contract__subtitle">А также стремящиеся вытеснить традиционное производство,
 										нанотехнологии функционально разнесены на независимые элементы.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/byt-him.webp" type="image/webp"><img src="img/contract/byt-him.jpg" alt="Бытовая химия"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/byt-him.webp" type="image/webp"><img src="img/contract/byt-him.webp" alt="Бытовая химия"></picture>
 								</div>
 							</a>
 
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Дезинфицирующие средства</h3>
 									<p class="contract__subtitle">Лишь интерактивные прототипы призваны к ответу.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/dezinfect.webp" type="image/webp"><img src="img/contract/dezinfect.jpg" alt="Дезинфицирующие средства"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/dezinfect.webp" type="image/webp"><img src="img/contract/dezinfect.webp" alt="Дезинфицирующие средства"></picture>
 								</div>
 							</a>
 
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Пищевые аэрозоли</h3>
 									<p class="contract__subtitle">Безусловно, сплочённость команды профессионалов позволяет
 										оценить значение форм воздействия.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/dezinfect.webp" type="image/webp"><img src="img/contract/dezinfect.jpg" alt="Пищевые аэрозоли"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/dezinfect.webp" type="image/webp"><img src="img/contract/dezinfect.webp" alt="Пищевые аэрозоли"></picture>
 								</div>
 							</a>
 
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Косметическая продукция</h3>
 									<p class="contract__subtitle">Лишь интерактивные прототипы призваны к ответу.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/avto-him.webp" type="image/webp"><img src="img/contract/avto-him.jpg" alt="Косметическая продукция"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/avto-him.webp" type="image/webp"><img src="img/contract/avto-him.webp" alt="Косметическая продукция"></picture>
 								</div>
 							</a>
 
-							<a href="error.html" class="contract__item animation-item">
-								<div class="contract__description">
+							<a data-watch data-watch-once data-watch-threshold="0.8" href="error.html" class="contract__item animation-item">
+								<div class="contract__description _anim _anim-left-to-right">
 									<h3 class="contract__title-small small-title">Краски аэрозольные</h3>
 									<p class="contract__subtitle">А также стремящиеся вытеснить традиционное производство,
 										нанотехнологии функционально разнесены на независимые элементы.</p>
 								</div>
-								<div class="contract__img-wrapper -ibg">
-									<picture><source srcset="img/contract/byt-him.webp" type="image/webp"><img src="img/contract/byt-him.jpg" alt="Краски аэрозольные"></picture>
+								<div class="contract__img-wrapper -ibg _anim _anim-top-to-bottom">
+									<picture><source srcset="img/contract/byt-him.webp" type="image/webp"><img src="img/contract/byt-him.webp" alt="Краски аэрозольные"></picture>
 								</div>
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="mark">
 				<div class="mark__container">
-					<div class="mark__content">
-						<h2 class="mark__title title">собственные торговые марки</h2>
-						<div class="mark__items animation">
+					<div data-watch data-watch-once data-watch-threshold="0.4" class="mark__content">
+						<h2 class="mark__title title _anim _anim-left-to-right">собственные торговые марки</h2>
+						<div class="mark__items animation _anim _anim-top-to-bottom">
 							<a href="product-ag-tech.html" class="mark__ag mark__item animation-item">
 								<div class="mark__ag-wrapper mark__icon-wrapper">
 									<svg class="mark__icon-change" width="140" height="121" viewBox="0 0 140 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -342,34 +358,38 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="mission side">
-				<div class="mission__wrapper side__wrapper">
-					<picture><source srcset="img/mission/mission-bg.webp" type="image/webp"><img class="mission__img side-bg" src="img/mission/mission-bg.jpg" alt=""></picture>
+				<div data-watch data-watch-once data-watch-threshold="0.5" class="mission__wrapper side__wrapper">
+					<img class="mission__img side-bg _anim _anim-left-to-right" src="img/mission/mission-bg.webp" alt="">
 					<div class="mission__container side__container">
 						<div class="mission__content side__content">
-							<h2 class="mission__title title">Отношение к делу и к клиентам</h2>
-							<p class="mission__text mission__text-top">Кстати, интерактивные прототипы описаны максимально
+							<h2 class="mission__title title _anim _anim-top-to-bottom">Отношение к делу и к клиентам</h2>
+							<p class="mission__text mission__text-top _anim _anim-top-to-bottom">Кстати, интерактивные прототипы описаны максимально
 								подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры
 								говорит о возможностях соответствующих условий активизации. Внезапно, независимые
 								государства, которые представляют собой яркий пример континентально-европейского типа
 								политической культуры, будут подвергнуты целой серии независимых исследований. С учётом
 								сложившейся международной обстановки, синтетическое тестирование выявляет срочную
 								потребность системы массового участия.</p>
-							<p class="mission__text mission__text-bottom">А ещё действия представителей оппозиции,
+							<p class="mission__text mission__text-bottom _anim _anim-top-to-bottom">А ещё действия представителей оппозиции,
 								превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены
 								сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в
 								значительной степени обусловливает важность дальнейших направлений развития.</p>
-							<a href="about.html" class="mission__link line-link"><span class="mission__link-desc">Подробнее о компании</span>
-								<span class="mission__link-mob">О нашей миссии</span></a>
+							<div class="mission__link_wrapper _anim _anim-top-to-bottom">
+								<a href="about.html" class="mission__link line-link"><span class="mission__link-desc">Подробнее о компании</span>
+									<span class="mission__link-mob">О нашей миссии</span></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="partner">
 				<div class="partner__container">
-					<div class="partner__content">
-						<h2 class="partner__title title">Производим аэрозольную продукцию для разных сфер</h2>
-						<div class="partner__group-list icon__group-list">
+					<div data-watch data-watch-once data-watch-threshold="0.3" class="partner__content">
+						<h2 class="partner__title title _anim _anim-left-to-right">Производим аэрозольную продукцию для разных сфер</h2>
+						<div class="partner__group-list icon__group-list _anim _anim-left-to-right">
 							<ul class="partner__list icon__list">
 								<li class="him -icon">Химические производства</li>
 								<li class="car -icon">Автомойки</li>
@@ -385,7 +405,7 @@
 								<li class="dots -icon">И многих других</li>
 							</ul>
 						</div>
-						<div class="partner__items animation">
+						<div class="partner__items animation _anim _anim-top-to-bottom">
 							<div class="partner__item animation-item">
 								<img class="partner-brand" src="img/icons/brands/burger-king.svg" alt="Burger King">
 							</div>
@@ -417,16 +437,17 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="blog">
 				<div class="blog__container">
-					<div class="blog__content">
-						<h2 class="blog__title title">Блог экспертов в области производства</h2>
+					<div data-watch data-watch-once data-watch-threshold="0.5" class="blog__content">
+						<h2 class="blog__title title _anim _anim-left-to-right">Блог экспертов в области производства</h2>
 						<!-- Swiper Slider -->
-						<div class="blog__slider swiper">
+						<div class="blog__slider swiper  _anim _anim-top-to-bottom">
 							<div class="blog__wrapper swiper-wrapper">
 								<!-- Slide-->
 								<a href="blog-more-lab.html" class="blog__slide swiper-slide">
-									<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+									<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 									<div class="blog__desc">
 										<h3 class="blog__title-small small-title">Современная методология разработки
 											одухотворила всех
@@ -436,7 +457,7 @@
 									</div>
 								</a>
 								<a href="blog-more-manufacture.html" class="blog__slide swiper-slide">
-									<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+									<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 									<div class="blog__desc">
 										<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 											прекрасна</h3>
@@ -446,7 +467,7 @@
 									</div>
 								</a>
 								<a href="blog-more-lab.html" class="blog__slide swiper-slide">
-									<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.jpg" alt=""></picture>
+									<picture><source srcset="img/blog/lab.webp" type="image/webp"><img src="img/blog/lab.webp" alt=""></picture>
 									<div class="blog__desc">
 										<h3 class="blog__title-small small-title">Современная методология разработки
 											одухотворила всех
@@ -456,7 +477,7 @@
 									</div>
 								</a>
 								<a href="blog-more-manufacture.html" class="blog__slide swiper-slide">
-									<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.jpg" alt=""></picture>
+									<picture><source srcset="img/blog/manufacture.webp" type="image/webp"><img src="img/blog/manufacture.webp" alt=""></picture>
 									<div class="blog__desc">
 										<h3 class="blog__title-small small-title">Сложно сказать, почему жизнь
 											прекрасна</h3>
@@ -480,48 +501,55 @@
 					</div>
 				</div>
 			</section>
-			<section class="offer">
-				<picture><source srcset="img/offer/item.webp" type="image/webp"><img class="offer__aside-bg" src="img/offer/item.jpg" alt=""></picture>
+
+			<section data-watch data-watch-once data-watch-threshold="0.5" class="offer">
+				<img class="offer__aside-bg _anim _anim-left-to-right" src="img/offer/item.webp" alt="">
+
 				<div class="offer__container">
-					<div class="offer__content">
-						<h2 class="offer__title title">Хотите сотрудничать?</h2>
-						<p class="offer__subtitle">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
+					<div data-watch data-watch-once class="offer__content">
+						<h2 class="offer__title title _anim _anim-left-to-right">Хотите сотрудничать?</h2>
+						<p class="offer__subtitle _anim _anim-top-to-bottom">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
 							ответит
 							на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-						<div class="offer__input-group input-group">
-							<input class="offer__text input__text" type="text" placeholder="Имя">
-							<div class="offer__tel-wrapper">
-								<input class="offer__tel input__tel" type="tel" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
-								<span class="input__tel-desc info">Номер телефона</span>
+						<form class="offer__form _anim _anim-top-to-bottom">
+							<div class="offer__input-group input-group">
+								<input class="offer__text input__text" data-required type="text" placeholder="Имя">
+								<div class="offer__tel-wrapper">
+									<input class="offer__tel input__tel" data-required type="tel" id="telOffer" name="telOffer" placeholder="+_ (___) __-__-___" data-mask="+_ (___) __-__-___">
+									<label for="telOffer" class="input__tel-desc info">Номер телефона</label>
+								</div>
 							</div>
-						</div>
-						<div class="offer__submit">
-							<a href="#" class="offer__link link" data-popup="#thx__popup">Отправить заявку</a>
-							<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную
-								работу, но
-								и
-								абсолютную конфиденциальность информации!</p>
-						</div>
+							<div class="offer__submit">
+								<button type="submit" data-popup="#thx__popup" class="offer__link link">Отправить заявку</button>
+								<p class="offer__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
+
 		</main>
+
 		<footer class="footer">
+
 			<hr class="footer__line line">
-			<div class="footer-top top __container">
-				<a href="index.html" class="top__logo logo"><img src="img/logo.svg" alt=""></a>
-				<p class="top__contact__tel contact__tel">+7 (499) 686-10-14</p>
-				<p class="top__contact__address contact__address">г. Москва, Холодильный пер. 4к1с8</p>
-				<p class="top__contact__email contact__email">a.dragunov@tdaliance.ru</p>
-				<div class="top__social contact__social">
+
+			<div data-watch data-watch-once data-watch-threshold="0.5" class="footer-top top __container">
+				<a href="index.html" class="top__logo logo _anim _anim-top-to-bottom"><img src="img/logo.svg" alt=""></a>
+				<a href="tel:+74996861014" class="top__contact__tel contact__tel _anim _anim-top-to-bottom">+7 (499) 686-10-14</a>
+				<p class="top__contact__address contact__address _anim _anim-top-to-bottom">г. Москва, Холодильный пер. 4к1с8</p>
+				<p class="top__contact__email contact__email _anim _anim-top-to-bottom">a.dragunov@tdaliance.ru</p>
+				<div class="top__social contact__social _anim _anim-top-to-bottom">
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/vk.svg" alt="VK"></a>
 					<a href="error.html" class="top__contact__link contact__link"><img src="img/icons/inst.svg" alt="Instagram"></a>
 				</div>
 			</div>
+
 			<hr class="footer__line line">
+
 			<div class="footer-middle  middle __container">
-				<nav class="middle__menu">
-					<ul class="middle__list-contract">
+				<nav data-watch data-watch-once data-watch-margin="-10% 0px" class="middle__menu">
+					<ul class="middle__list-contract _anim _anim-top-to-bottom">
 						<li class="middle__item-contract">
 							<a href="contract-product.html" class="middle__link">Контрактное производство</a>
 							<ul class="middle__sublist sublist-contract">
@@ -536,7 +564,7 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-marks">
+					<ul class="middle__list-marks _anim _anim-top-to-bottom">
 						<li class="middle__item-marks">
 							<a href="own-product.html" class="middle__link">Собственные марки</a>
 							<ul class="middle__sublist">
@@ -545,51 +573,53 @@
 							</ul>
 						</li>
 					</ul>
-					<ul class="middle__list-group">
+					<ul class="middle__list-group _anim _anim-top-to-bottom">
 						<li class="middle__item"><a href="about.html" class="middle__link">О компании</a></li>
 						<li class="middle__item"><a href="news.html" class="middle__link">Новости</a></li>
 						<li class="middle__item"><a href="contact.html" class="middle__link">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
+
 			<hr class="footer__line line">
-			<div class="footer-bottom bottom __container">
-				<div class="bottom-group">
+
+			<div data-watch data-watch-once class="footer-bottom bottom __container">
+				<div class="bottom-group _anim _anim-top-to-bottom">
 					<p class="bottom-copyright">© 2022 «Aliance Production». Все права защищены.</p>
 					<a href="politics.html" class="bottom-policy">Политика конфиденциальности</a>
 				</div>
-				<div class="bottom-made">
+				<div class="bottom-made _anim _anim-top-to-bottom">
 					<p class="bottom__text bottom__text-mob">Дизайн и разработка:</p>
 					<p class="bottom__text bottom__text-desc">Сделано в</p>
 					<a href="error.html" class="bottom__link"><img src="img/footer/ruso.svg" alt="Made in Ruso"></a>
 				</div>
 			</div>
+
 		</footer>
+
 	</div>
-	<form id="phone__popup" aria-hidden="true" class="phone__popup popup">
+	<div id="phone__popup" aria-hidden="true" class="phone__popup popup">
 		<div class="phone__wrapper popup__wrapper">
-			<div class="phone-content popup__content">
+			<form class="phone-content popup__content">
 				<button data-close type="button" class="phone__close popup__close"></button>
 				<p class="phone__heading popup__heading">Есть вопросы?</p>
 				<p class="phone__subheading popup__subheading">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее
 					время ответит на
 					все интересующие вопросы и поможем даже в самых сложных случаях!</p>
 				<div class="input-group input">
-					<input class="phone__text input__text" type="text" placeholder="Имя">
+					<input class="phone__text input__text" type="text" data-required placeholder="Имя">
 					<div class="input__tel-wrapper">
-						<input class="popup__tel input__tel" type="tel" name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
+						<input class="popup__tel input__tel" type="tel" data-required name="telPopup" placeholder="+7 (95_) __-__-___" data-mask="+7 (95_) __-__-___">
 						<span class="input__tel-desc info">Номер телефона</span>
 					</div>
 				</div>
-				<a href="#" class="phone__link popup__link link" data-popup="#thx__popup">Отправить заявку</a>
-				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но
-					и
-					абсолютную конфиденциальность информации!</p>
-			</div>
+				<button type="submit" data-popup="#thx__popup" class="phone__link popup__link link">Отправить заявку</button>
+				<p class="popup__privacy privacy">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+			</form>
 		</div>
-	</form>
+	</div>
 
-	<form id="thx__popup" aria-hidden="true" class="thx__popup popup">
+	<div id="thx__popup" aria-hidden="true" class="thx__popup popup">
 		<div class="thx__wrapper popup__wrapper">
 			<div class="thx-content popup__content">
 				<button data-close type="button" class="thx__close popup__close"></button>
@@ -600,8 +630,8 @@
 				<a href="#" class="thx__link popup__link link">Вернуться на главную</a>
 			</div>
 		</div>
-	</form>
-	<script src="js/app.min.js?_v=20220916011010"></script>
+	</div>
+	<script src="js/app.min.js?_v=20230309045235"></script>
 </body>
 
 </html>
