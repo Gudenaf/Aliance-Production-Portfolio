@@ -6,11 +6,13 @@
 
     // Добавление loaded для HTML после полной загрузки страницы
     function addLoadedClass() {
-        window.addEventListener("load", (function() {
-            setTimeout((function() {
-                document.documentElement.classList.add("loaded");
-            }), 0);
-        }));
+        window.addEventListener("load", function () {
+            document.documentElement.classList.add('lock');
+            setTimeout(function () {
+                document.documentElement.classList.remove('lock');
+                document.documentElement.classList.add('loaded');
+            }, 0);
+        });
     }
 
     // Получение хеша в адресе сайта
@@ -336,28 +338,6 @@
     }
     // Запускаем и добавляем в объект модулей
     flsModules.popup = new Popup({});
-
-    // Модуль плавной прокрутки к блоку
-    let gotoblock_gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
-        const targetBlockElement = document.querySelector(targetBlock);
-        if (targetBlockElement) {
-            let headerItem = "";
-            let headerItemHeight = 0;
-            if (noHeader) {
-                headerItem = "header.header";
-                headerItemHeight = document.querySelector(headerItem).offsetHeight;
-            }
-            let options = {
-                speedAsDuration: true,
-                speed,
-                header: headerItem,
-                offset: offsetTop,
-                easing: "easeOutQuad"
-            };
-            document.documentElement.classList.contains("menu-open") ? menuClose() : null;
-            if ("undefined" !== typeof SmoothScroll) (new SmoothScroll).animateScroll(targetBlockElement, "", options);
-        }
-    };
 
     // Валидация форм
     let formValidate = {
